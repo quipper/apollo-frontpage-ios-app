@@ -14,6 +14,8 @@
 		64D3750F24C6C06E0028339D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64D3750E24C6C06E0028339D /* Preview Assets.xcassets */; };
 		64D3751224C6C06E0028339D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64D3751024C6C06E0028339D /* LaunchScreen.storyboard */; };
 		64D3751D24C6C06F0028339D /* ApollofrontpageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3751C24C6C06F0028339D /* ApollofrontpageTests.swift */; };
+		D191F330F022CB0B98974306 /* Pods_Apollofrontpage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648421C43D774CAF2B54591D /* Pods_Apollofrontpage.framework */; };
+		DE50669A0092D64BC469308A /* Pods_ApollofrontpageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4690EE59CBE75626AB93C3 /* Pods_ApollofrontpageTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A5B11FBD5851282732215A4 /* Pods-ApollofrontpageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApollofrontpageTests.debug.xcconfig"; path = "Target Support Files/Pods-ApollofrontpageTests/Pods-ApollofrontpageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		585AE13522FD14A32DFF69EF /* Pods-Apollofrontpage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollofrontpage.debug.xcconfig"; path = "Target Support Files/Pods-Apollofrontpage/Pods-Apollofrontpage.debug.xcconfig"; sourceTree = "<group>"; };
+		648421C43D774CAF2B54591D /* Pods_Apollofrontpage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apollofrontpage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D3750224C6C06D0028339D /* Apollofrontpage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apollofrontpage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D3750524C6C06D0028339D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64D3750724C6C06D0028339D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,9 @@
 		64D3751824C6C06E0028339D /* ApollofrontpageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApollofrontpageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D3751C24C6C06F0028339D /* ApollofrontpageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApollofrontpageTests.swift; sourceTree = "<group>"; };
 		64D3751E24C6C06F0028339D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D4690EE59CBE75626AB93C3 /* Pods_ApollofrontpageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApollofrontpageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A992047B86387D356C38EE /* Pods-ApollofrontpageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApollofrontpageTests.release.xcconfig"; path = "Target Support Files/Pods-ApollofrontpageTests/Pods-ApollofrontpageTests.release.xcconfig"; sourceTree = "<group>"; };
+		F79927D7B592FA764A8A073D /* Pods-Apollofrontpage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollofrontpage.release.xcconfig"; path = "Target Support Files/Pods-Apollofrontpage/Pods-Apollofrontpage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D191F330F022CB0B98974306 /* Pods_Apollofrontpage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE50669A0092D64BC469308A /* Pods_ApollofrontpageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 				64D3750424C6C06D0028339D /* Apollofrontpage */,
 				64D3751B24C6C06F0028339D /* ApollofrontpageTests */,
 				64D3750324C6C06D0028339D /* Products */,
+				736C92398728039203A8B114 /* Pods */,
+				D7672D8B80E1B211E3C5D9B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +119,27 @@
 			path = ApollofrontpageTests;
 			sourceTree = "<group>";
 		};
+		736C92398728039203A8B114 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				585AE13522FD14A32DFF69EF /* Pods-Apollofrontpage.debug.xcconfig */,
+				F79927D7B592FA764A8A073D /* Pods-Apollofrontpage.release.xcconfig */,
+				3A5B11FBD5851282732215A4 /* Pods-ApollofrontpageTests.debug.xcconfig */,
+				85A992047B86387D356C38EE /* Pods-ApollofrontpageTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7672D8B80E1B211E3C5D9B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				648421C43D774CAF2B54591D /* Pods_Apollofrontpage.framework */,
+				6D4690EE59CBE75626AB93C3 /* Pods_ApollofrontpageTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64D3752124C6C06F0028339D /* Build configuration list for PBXNativeTarget "Apollofrontpage" */;
 			buildPhases = (
+				4B727E444F00B7A1A0DB9EA3 /* [CP] Check Pods Manifest.lock */,
 				64D374FE24C6C06D0028339D /* Sources */,
 				64D374FF24C6C06D0028339D /* Frameworks */,
 				64D3750024C6C06D0028339D /* Resources */,
+				79E0AA4D9920BFAB13930FEE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64D3752424C6C06F0028339D /* Build configuration list for PBXNativeTarget "ApollofrontpageTests" */;
 			buildPhases = (
+				3DD13ACCFFBB89010F189157 /* [CP] Check Pods Manifest.lock */,
 				64D3751424C6C06E0028339D /* Sources */,
 				64D3751524C6C06E0028339D /* Frameworks */,
 				64D3751624C6C06E0028339D /* Resources */,
@@ -202,6 +238,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DD13ACCFFBB89010F189157 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApollofrontpageTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B727E444F00B7A1A0DB9EA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Apollofrontpage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79E0AA4D9920BFAB13930FEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Apollofrontpage/Pods-Apollofrontpage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Apollofrontpage/Pods-Apollofrontpage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Apollofrontpage/Pods-Apollofrontpage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64D374FE24C6C06D0028339D /* Sources */ = {
@@ -360,6 +460,7 @@
 		};
 		64D3752224C6C06F0028339D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585AE13522FD14A32DFF69EF /* Pods-Apollofrontpage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +481,7 @@
 		};
 		64D3752324C6C06F0028339D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79927D7B592FA764A8A073D /* Pods-Apollofrontpage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -400,6 +502,7 @@
 		};
 		64D3752524C6C06F0028339D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5B11FBD5851282732215A4 /* Pods-ApollofrontpageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -422,6 +525,7 @@
 		};
 		64D3752624C6C06F0028339D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85A992047B86387D356C38EE /* Pods-ApollofrontpageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -1,0 +1,6 @@
+framework module Pods_Apollofrontpage {
+  umbrella header "Pods-Apollofrontpage-umbrella.h"
+
+  export *
+  module * { export * }
+}
