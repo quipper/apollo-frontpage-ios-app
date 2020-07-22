@@ -11,8 +11,17 @@ import Apollo
 import SwiftUI
 
 enum PostListError: Error {
-    case fetchAllPosts(Error)
-    case upvote(Error)
+    case fetchAllPosts
+    case upvote
+
+    var message: String {
+        switch self {
+        case .fetchAllPosts:
+            return "Error: fetch all posts failed."
+        case .upvote:
+            return "Error: upvote failed."
+        }
+    }
 }
 
 final class PostListViewModel: ObservableObject {
@@ -21,19 +30,9 @@ final class PostListViewModel: ObservableObject {
     @Published var posts: [PostDetails] = []
     @Published var showError = false
 
-    private var error: PostListError? {
+    private(set) var error: PostListError? {
         didSet {
             showError = true
-        }
-    }
-
-    var errorDescription: String {
-        guard let error = error else { return "" }
-        switch error {
-        case .fetchAllPosts(let error):
-            return error.localizedDescription
-        case .upvote(let error):
-            return error.localizedDescription
         }
     }
 
@@ -50,8 +49,8 @@ final class PostListViewModel: ObservableObject {
                 } else {
                     self.posts = []
                 }
-            case .failure(let error):
-                self.error = .fetchAllPosts(error)
+            case .failure:
+                self.error = .fetchAllPosts
             }
         }
     }
@@ -68,8 +67,8 @@ final class PostListViewModel: ObservableObject {
                 post.votes = upvotePost.votes
                 self.posts.remove(at: index)
                 self.posts.insert(post, at: index)
-            case .failure(let error):
-                self.error = .upvote(error)
+            case .failure:
+                self.error = .upvote
             }
         }
     }

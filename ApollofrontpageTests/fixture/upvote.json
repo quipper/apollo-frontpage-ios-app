@@ -1,0 +1,9 @@
+{
+  "data": {
+    "upvotePost": {
+      "__typename": "Post",
+      "id": 1,
+      "votes": 85
+    }
+  }
+}

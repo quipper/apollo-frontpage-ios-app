@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		644DBA9524C7E61A00C8FCD1 /* all_posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 644DBA9424C7E61A00C8FCD1 /* all_posts.json */; };
 		64D3750624C6C06D0028339D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3750524C6C06D0028339D /* AppDelegate.swift */; };
 		64D3750824C6C06D0028339D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3750724C6C06D0028339D /* SceneDelegate.swift */; };
 		64D3750A24C6C06D0028339D /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3750924C6C06D0028339D /* PostListView.swift */; };
 		64D3750C24C6C06E0028339D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64D3750B24C6C06E0028339D /* Assets.xcassets */; };
 		64D3750F24C6C06E0028339D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64D3750E24C6C06E0028339D /* Preview Assets.xcassets */; };
 		64D3751224C6C06E0028339D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64D3751024C6C06E0028339D /* LaunchScreen.storyboard */; };
-		64D3751D24C6C06F0028339D /* ApollofrontpageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3751C24C6C06F0028339D /* ApollofrontpageTests.swift */; };
+		64D3751D24C6C06F0028339D /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3751C24C6C06F0028339D /* PostListViewModelTests.swift */; };
 		64D3752A24C6F0E30028339D /* PostListView.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 64D3752824C6F0E30028339D /* PostListView.graphql */; };
 		64D3752B24C6F0E30028339D /* PostListCell.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 64D3752924C6F0E30028339D /* PostListCell.graphql */; };
 		64D3752D24C6F1090028339D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3752C24C6F1090028339D /* API.swift */; };
 		64D3753124C6FCC50028339D /* PostListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3753024C6FCC50028339D /* PostListCell.swift */; };
 		64D3753424C7125E0028339D /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3753324C7125E0028339D /* PostListViewModel.swift */; };
+		64D4640B24C7FF8900D1B510 /* upvote.json in Resources */ = {isa = PBXBuildFile; fileRef = 64D4640A24C7FF8900D1B510 /* upvote.json */; };
+		64D4640D24C807D700D1B510 /* MockNetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D4640C24C807D700D1B510 /* MockNetworkTransport.swift */; };
 		D191F330F022CB0B98974306 /* Pods_Apollofrontpage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648421C43D774CAF2B54591D /* Pods_Apollofrontpage.framework */; };
 		DE50669A0092D64BC469308A /* Pods_ApollofrontpageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4690EE59CBE75626AB93C3 /* Pods_ApollofrontpageTests.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +39,7 @@
 /* Begin PBXFileReference section */
 		3A5B11FBD5851282732215A4 /* Pods-ApollofrontpageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApollofrontpageTests.debug.xcconfig"; path = "Target Support Files/Pods-ApollofrontpageTests/Pods-ApollofrontpageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		585AE13522FD14A32DFF69EF /* Pods-Apollofrontpage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollofrontpage.debug.xcconfig"; path = "Target Support Files/Pods-Apollofrontpage/Pods-Apollofrontpage.debug.xcconfig"; sourceTree = "<group>"; };
+		644DBA9424C7E61A00C8FCD1 /* all_posts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = all_posts.json; sourceTree = "<group>"; };
 		648421C43D774CAF2B54591D /* Pods_Apollofrontpage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apollofrontpage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D3750224C6C06D0028339D /* Apollofrontpage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apollofrontpage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D3750524C6C06D0028339D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,13 +50,15 @@
 		64D3751124C6C06E0028339D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64D3751324C6C06E0028339D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64D3751824C6C06E0028339D /* ApollofrontpageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApollofrontpageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64D3751C24C6C06F0028339D /* ApollofrontpageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApollofrontpageTests.swift; sourceTree = "<group>"; };
+		64D3751C24C6C06F0028339D /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
 		64D3751E24C6C06F0028339D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64D3752824C6F0E30028339D /* PostListView.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PostListView.graphql; sourceTree = "<group>"; };
 		64D3752924C6F0E30028339D /* PostListCell.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PostListCell.graphql; sourceTree = "<group>"; };
 		64D3752C24C6F1090028339D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		64D3753024C6FCC50028339D /* PostListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCell.swift; sourceTree = "<group>"; };
 		64D3753324C7125E0028339D /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		64D4640A24C7FF8900D1B510 /* upvote.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = upvote.json; sourceTree = "<group>"; };
+		64D4640C24C807D700D1B510 /* MockNetworkTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkTransport.swift; sourceTree = "<group>"; };
 		6D4690EE59CBE75626AB93C3 /* Pods_ApollofrontpageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApollofrontpageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A992047B86387D356C38EE /* Pods-ApollofrontpageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApollofrontpageTests.release.xcconfig"; path = "Target Support Files/Pods-ApollofrontpageTests/Pods-ApollofrontpageTests.release.xcconfig"; sourceTree = "<group>"; };
 		F79927D7B592FA764A8A073D /* Pods-Apollofrontpage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollofrontpage.release.xcconfig"; path = "Target Support Files/Pods-Apollofrontpage/Pods-Apollofrontpage.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		644DBA9324C7E5F400C8FCD1 /* fixture */ = {
+			isa = PBXGroup;
+			children = (
+				644DBA9424C7E61A00C8FCD1 /* all_posts.json */,
+				64D4640A24C7FF8900D1B510 /* upvote.json */,
+			);
+			path = fixture;
+			sourceTree = "<group>";
+		};
 		64D374F924C6C06D0028339D = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +139,9 @@
 		64D3751B24C6C06F0028339D /* ApollofrontpageTests */ = {
 			isa = PBXGroup;
 			children = (
-				64D3751C24C6C06F0028339D /* ApollofrontpageTests.swift */,
+				644DBA9324C7E5F400C8FCD1 /* fixture */,
+				64D4640E24C8083200D1B510 /* PostListTests */,
+				64D4640C24C807D700D1B510 /* MockNetworkTransport.swift */,
 				64D3751E24C6C06F0028339D /* Info.plist */,
 			);
 			path = ApollofrontpageTests;
@@ -140,6 +157,14 @@
 				64D3752924C6F0E30028339D /* PostListCell.graphql */,
 			);
 			path = PostList;
+			sourceTree = "<group>";
+		};
+		64D4640E24C8083200D1B510 /* PostListTests */ = {
+			isa = PBXGroup;
+			children = (
+				64D3751C24C6C06F0028339D /* PostListViewModelTests.swift */,
+			);
+			path = PostListTests;
 			sourceTree = "<group>";
 		};
 		736C92398728039203A8B114 /* Pods */ = {
@@ -259,6 +284,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D4640B24C7FF8900D1B510 /* upvote.json in Resources */,
+				644DBA9524C7E61A00C8FCD1 /* all_posts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +391,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64D3751D24C6C06F0028339D /* ApollofrontpageTests.swift in Sources */,
+				64D4640D24C807D700D1B510 /* MockNetworkTransport.swift in Sources */,
+				64D3751D24C6C06F0028339D /* PostListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,7 +26,7 @@ struct PostListView: View {
             self.viewModel.fetchAllPosts()
         }
         .alert(isPresented: self.$viewModel.showError) {
-            Alert(title: Text("エラー"), message: Text(self.viewModel.errorDescription))
+            Alert(title: Text("エラー"), message: Text(self.viewModel.error!.message))
         }
     }
 }
