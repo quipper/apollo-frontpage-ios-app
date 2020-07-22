@@ -10,10 +10,32 @@ import Foundation
 import Apollo
 import SwiftUI
 
+enum PostListError: Error {
+    case fetchAllPosts(Error)
+    case upvote(Error)
+}
+
 final class PostListViewModel: ObservableObject {
     private let apollo: ApolloClient
 
     @Published var posts: [PostDetails] = []
+    @Published var showError = false
+
+    private var error: PostListError? {
+        didSet {
+            showError = true
+        }
+    }
+
+    var errorDescription: String {
+        guard let error = error else { return "" }
+        switch error {
+        case .fetchAllPosts(let error):
+            return error.localizedDescription
+        case .upvote(let error):
+            return error.localizedDescription
+        }
+    }
 
     init(apollo: ApolloClient) {
         self.apollo = apollo
@@ -29,7 +51,7 @@ final class PostListViewModel: ObservableObject {
                     self.posts = []
                 }
             case .failure(let error):
-              NSLog("Error while fetching query: \(error.localizedDescription)")
+                self.error = .fetchAllPosts(error)
             }
         }
     }
@@ -47,7 +69,7 @@ final class PostListViewModel: ObservableObject {
                 self.posts.remove(at: index)
                 self.posts.insert(post, at: index)
             case .failure(let error):
-              NSLog("Error while attempting to upvote post: \(error.localizedDescription)")
+                self.error = .upvote(error)
             }
         }
     }
